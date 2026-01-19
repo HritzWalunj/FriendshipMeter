@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friendship Meter 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Friendship Meter 💖</h1>
+        <p>Check how strong your friendship is!</p>
+
+        <form id="friendship-form">
+            <input type="text" id="name1" placeholder="Your Name" required pattern="[A-Za-z ]+" title="Only letters are allowed">
+            <input type="text" id="name2" placeholder="Friend's Name" required pattern="[A-Za-z ]+" title="Only letters are allowed">
+
+            <button type="submit">Check Friendship</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>Score: <span id="score"></span>%</h2>
+            <p id="message"></p>
+        </div>
+    </div>
+    <div class="friend-heart"></div>
+    <div class="friend-heart"></div>
+    <div class="friend-heart"></div>
+    <div class="friend-heart"></div>
+    <div class="friend-heart"></div>
+
+    <div class="main-content">
+        Welcome to Friendship Zone! 🌟
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

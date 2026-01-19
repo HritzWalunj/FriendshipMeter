@@ -1,0 +1,115 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    text-align: center;
+    padding: 50px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 10% auto 0 auto;;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #ff4081;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e73370;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+/* === Friendship-Themed Animated Background === */
+
+/* Make the page fill the screen */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background: linear-gradient(270deg, #ff9a9e, #fad0c4, #a1c4fd);
+    background-size: 600% 600%;
+    animation: gradientShift 30s ease infinite;
+}
+
+/* Gradient background animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Floating heart animation */
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0.7; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}
+
+/* Heart style */
+.friend-heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/contain;
+    animation: float 12s linear infinite;
+}
+
+/* Add variation in size, speed, and delay */
+.friend-heart:nth-child(1) {
+    left: 10%; animation-duration: 10s; width: 15px; height: 15px;
+}
+.friend-heart:nth-child(2) {
+    left: 30%; animation-duration: 14s; width: 25px; height: 25px; animation-delay: 2s;
+}
+.friend-heart:nth-child(3) {
+    left: 50%; animation-duration: 12s; width: 20px; height: 20px; animation-delay: 4s;
+}
+.friend-heart:nth-child(4) {
+    left: 70%; animation-duration: 16s; width: 18px; height: 18px; animation-delay: 1s;
+}
+.friend-heart:nth-child(5) {
+    left: 85%; animation-duration: 13s; width: 22px; height: 22px; animation-delay: 3s;
+}
+
+/* Example main content container */
+.main-content {
+    position: relative;
+    z-index: 10; /* Make sure content is above hearts */
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
